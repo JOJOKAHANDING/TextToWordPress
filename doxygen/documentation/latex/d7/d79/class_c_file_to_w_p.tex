@@ -1,0 +1,146 @@
+\hypertarget{class_c_file_to_w_p}{\section{C\+File\+To\+W\+P Class Reference}
+\label{class_c_file_to_w_p}\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_to_w_p_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_c_file_to_w_p_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct} ()
+\item 
+\hyperlink{class_c_file_to_w_p_a4cd3e7afe8337f1a36ad9d858f9b73ab}{post\+To\+Word\+Press} (\$filename, \$user\+Id=1)
+\begin{DoxyCompactList}\small\item\em Does a post to Word\+Press. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_c_file_to_w_p_a2cbf943c3c9c6f48e6c6595c660a5985}{D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T} = \char`\"{}dummy value for wp\+\_\+insert\+\_\+post\+\_\+data()\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_to_w_p_a75e91046c53043e1d94c8e0511a6a2af}{init\+Sections} ()
+\begin{DoxyCompactList}\small\item\em Initialize our array of \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\+S\char`\"{}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_file_to_w_p_a8e5f38398418ad71cc900f0c20db6bbb}{\$m\+\_\+dbase}
+\item 
+\hyperlink{class_c_file_to_w_p_a67150998a8e2738b8e5c4e8c160c6aea}{\$m\+\_\+file\+Parser}
+\item 
+\hyperlink{class_c_file_to_w_p_a24156332f65e1ccec8b6e489b1508d39}{\$m\+\_\+sections}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file file\+To\+W\+P.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_file_to_w_p_a095c5d389db211932136b53f25f39685}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_file_to_w_p_a095c5d389db211932136b53f25f39685}
+
+
+Definition at line 44 of file file\+To\+W\+P.\+php.
+
+\hypertarget{class_c_file_to_w_p_a421831a265621325e1fdd19aace0c758}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_file_to_w_p_a421831a265621325e1fdd19aace0c758}
+
+
+Definition at line 58 of file file\+To\+W\+P.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_file_to_w_p_a75e91046c53043e1d94c8e0511a6a2af}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!init\+Sections@{init\+Sections}}
+\index{init\+Sections@{init\+Sections}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{init\+Sections}]{\setlength{\rightskip}{0pt plus 5cm}init\+Sections (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_file_to_w_p_a75e91046c53043e1d94c8e0511a6a2af}
+
+
+Initialize our array of \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\+S\char`\"{}. 
+
+\begin{DoxyReturn}{Returns}
+Nothing
+\end{DoxyReturn}
+Initialize our array of sections with the requried \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\+S\char`\"{} we are interested in.  
+
+Definition at line 150 of file file\+To\+W\+P.\+php.
+
+\hypertarget{class_c_file_to_w_p_a4cd3e7afe8337f1a36ad9d858f9b73ab}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!post\+To\+Word\+Press@{post\+To\+Word\+Press}}
+\index{post\+To\+Word\+Press@{post\+To\+Word\+Press}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{post\+To\+Word\+Press}]{\setlength{\rightskip}{0pt plus 5cm}post\+To\+Word\+Press (
+\begin{DoxyParamCaption}
+\item[{}]{\$filename, }
+\item[{}]{\$user\+Id = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}}\label{class_c_file_to_w_p_a4cd3e7afe8337f1a36ad9d858f9b73ab}
+
+
+Does a post to Word\+Press. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$filename} & textfile to be processed \\
+\hline
+\mbox{\tt in}  & {\em \$user\+Id} & Word\+Press id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+U\+E if successful otherwise F\+A\+L\+S\+E
+\end{DoxyReturn}
+Does a post to Word\+Press from a text file (\$filename) using wp\+\_\+insert\+\_\+post. Bypassing the sanitation check of Word\+Press through a database update.  
+
+Definition at line 76 of file file\+To\+W\+P.\+php.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_c_file_to_w_p_a8e5f38398418ad71cc900f0c20db6bbb}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!\$m\+\_\+dbase@{\$m\+\_\+dbase}}
+\index{\$m\+\_\+dbase@{\$m\+\_\+dbase}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{\$m\+\_\+dbase}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+dbase\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_file_to_w_p_a8e5f38398418ad71cc900f0c20db6bbb}
+
+
+Definition at line 161 of file file\+To\+W\+P.\+php.
+
+\hypertarget{class_c_file_to_w_p_a67150998a8e2738b8e5c4e8c160c6aea}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!\$m\+\_\+file\+Parser@{\$m\+\_\+file\+Parser}}
+\index{\$m\+\_\+file\+Parser@{\$m\+\_\+file\+Parser}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{\$m\+\_\+file\+Parser}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+file\+Parser\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_file_to_w_p_a67150998a8e2738b8e5c4e8c160c6aea}
+
+
+Definition at line 162 of file file\+To\+W\+P.\+php.
+
+\hypertarget{class_c_file_to_w_p_a24156332f65e1ccec8b6e489b1508d39}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!\$m\+\_\+sections@{\$m\+\_\+sections}}
+\index{\$m\+\_\+sections@{\$m\+\_\+sections}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{\$m\+\_\+sections}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+sections\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_file_to_w_p_a24156332f65e1ccec8b6e489b1508d39}
+
+
+Definition at line 163 of file file\+To\+W\+P.\+php.
+
+\hypertarget{class_c_file_to_w_p_a2cbf943c3c9c6f48e6c6595c660a5985}{\index{C\+File\+To\+W\+P@{C\+File\+To\+W\+P}!D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T@{D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T}}
+\index{D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T@{D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T}!C\+File\+To\+W\+P@{C\+File\+To\+W\+P}}
+\subsubsection[{D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const D\+U\+M\+M\+Y\+\_\+\+C\+O\+N\+T\+E\+N\+T = \char`\"{}dummy value for wp\+\_\+insert\+\_\+post\+\_\+data()\char`\"{}}}\label{class_c_file_to_w_p_a2cbf943c3c9c6f48e6c6595c660a5985}
+
+
+Definition at line 39 of file file\+To\+W\+P.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{file_to_w_p_8php}{file\+To\+W\+P.\+php}\end{DoxyCompactItemize}

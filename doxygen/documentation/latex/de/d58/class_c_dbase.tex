@@ -1,0 +1,244 @@
+\hypertarget{class_c_dbase}{\section{C\+Dbase Class Reference}
+\label{class_c_dbase}\index{C\+Dbase@{C\+Dbase}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_dbase_a964d3bd23db1022d52ec1ca90088701b}{\+\_\+\+\_\+construct} (\$hostname, \$database\+Name, \$user, \$password)
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\hyperlink{class_c_dbase_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+\hyperlink{class_c_dbase_ae123810f3cb0d1e91a6fedc1ee032dcf}{query} (\$sql\+Statement)
+\begin{DoxyCompactList}\small\item\em Performs queries to a database. \end{DoxyCompactList}\item 
+\hyperlink{class_c_dbase_ae48cc10bd727774bb36203986ce3b176}{fetch} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current contents of a result set. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_dbase_a44a2ac59a3b91f8c18905dce700934d6}{open} ()
+\begin{DoxyCompactList}\small\item\em Opens a database connection. \end{DoxyCompactList}\item 
+\hyperlink{class_c_dbase_aa69c8bf1f1dcf4e72552efff1fe3e87e}{close} ()
+\begin{DoxyCompactList}\small\item\em Terminates a database connection and does thenecessary cleanup. . \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_dbase_a18689448220cb9f67ee15999b4be473d}{\$m\+\_\+hostname}
+\item 
+\hyperlink{class_c_dbase_ad0ba4c46852bb7d82bd04f9b51e97eea}{\$m\+\_\+database\+Name}
+\item 
+\hyperlink{class_c_dbase_abfe23707f464ce39565482d658291b25}{\$m\+\_\+user}
+\item 
+\hyperlink{class_c_dbase_a5ae64ed0082ea8180014069f702ad4b3}{\$m\+\_\+password}
+\item 
+\hyperlink{class_c_dbase_abace9b0ce64d6ce2302e4b17855f9a10}{\$m\+\_\+connection}
+\item 
+\hyperlink{class_c_dbase_abe30b980bbd97a1d18b62f0d8dc13a7e}{\$m\+\_\+result\+Set}
+\item 
+\hyperlink{class_c_dbase_a52789ec4ae56b94c2965fdd4798c6af0}{\$m\+\_\+count\+Results}
+\item 
+\hyperlink{class_c_dbase_a34b634ed9ae0e2e303eb5370c8abf5e3}{\$m\+\_\+current\+Pos\+Results}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 22 of file dbase.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_dbase_a964d3bd23db1022d52ec1ca90088701b}{\index{C\+Dbase@{C\+Dbase}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+\item[{}]{\$hostname, }
+\item[{}]{\$database\+Name, }
+\item[{}]{\$user, }
+\item[{}]{\$password}
+\end{DoxyParamCaption}
+)}}\label{class_c_dbase_a964d3bd23db1022d52ec1ca90088701b}
+
+
+constructor 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$hostname} & database location \\
+\hline
+\mbox{\tt in}  & {\em \$database\+Name} & database name \\
+\hline
+\mbox{\tt in}  & {\em \$user} & database user \\
+\hline
+\mbox{\tt in}  & {\em \$password} & password of \$user \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a class instance
+\end{DoxyReturn}
+Instantiates this object 
+
+Definition at line 37 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_a421831a265621325e1fdd19aace0c758}{\index{C\+Dbase@{C\+Dbase}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_dbase_a421831a265621325e1fdd19aace0c758}
+
+
+destructor 
+
+\begin{DoxyReturn}{Returns}
+Nothing
+\end{DoxyReturn}
+Destroys and does object clean up. 
+
+Definition at line 58 of file dbase.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_dbase_aa69c8bf1f1dcf4e72552efff1fe3e87e}{\index{C\+Dbase@{C\+Dbase}!close@{close}}
+\index{close@{close}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{close}]{\setlength{\rightskip}{0pt plus 5cm}close (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_dbase_aa69c8bf1f1dcf4e72552efff1fe3e87e}
+
+
+Terminates a database connection and does thenecessary cleanup. . 
+
+\begin{DoxyReturn}{Returns}
+Nothing 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_ae48cc10bd727774bb36203986ce3b176}{\index{C\+Dbase@{C\+Dbase}!fetch@{fetch}}
+\index{fetch@{fetch}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{fetch}]{\setlength{\rightskip}{0pt plus 5cm}fetch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_dbase_ae48cc10bd727774bb36203986ce3b176}
+
+
+Retrieves the current contents of a result set. 
+
+\begin{DoxyReturn}{Returns}
+an array indexed by fieldnames from a result set otherwise F\+A\+L\+S\+E if an error or eos (end of search) is met. 
+\end{DoxyReturn}
+Fetches a record in the current a result set 
+
+Definition at line 99 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_a44a2ac59a3b91f8c18905dce700934d6}{\index{C\+Dbase@{C\+Dbase}!open@{open}}
+\index{open@{open}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{open}]{\setlength{\rightskip}{0pt plus 5cm}open (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_dbase_a44a2ac59a3b91f8c18905dce700934d6}
+
+
+Opens a database connection. 
+
+\begin{DoxyReturn}{Returns}
+true if succesful otherwise false 
+\end{DoxyReturn}
+
+
+Definition at line 118 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_ae123810f3cb0d1e91a6fedc1ee032dcf}{\index{C\+Dbase@{C\+Dbase}!query@{query}}
+\index{query@{query}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{query}]{\setlength{\rightskip}{0pt plus 5cm}query (
+\begin{DoxyParamCaption}
+\item[{}]{\$sql\+Statement}
+\end{DoxyParamCaption}
+)}}\label{class_c_dbase_ae123810f3cb0d1e91a6fedc1ee032dcf}
+
+
+Performs queries to a database. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$sql\+Statement} & sql statement \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succesful otherwise false
+\end{DoxyReturn}
+A database query is made using \$sql\+Statement. True is returned if the query is succesful otherwise false.  
+
+Definition at line 73 of file dbase.\+php.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_c_dbase_abace9b0ce64d6ce2302e4b17855f9a10}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+connection@{\$m\+\_\+connection}}
+\index{\$m\+\_\+connection@{\$m\+\_\+connection}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+connection}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+connection\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_abace9b0ce64d6ce2302e4b17855f9a10}
+
+
+Definition at line 163 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_a52789ec4ae56b94c2965fdd4798c6af0}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+count\+Results@{\$m\+\_\+count\+Results}}
+\index{\$m\+\_\+count\+Results@{\$m\+\_\+count\+Results}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+count\+Results}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+count\+Results\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_a52789ec4ae56b94c2965fdd4798c6af0}
+
+
+Definition at line 165 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_a34b634ed9ae0e2e303eb5370c8abf5e3}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+current\+Pos\+Results@{\$m\+\_\+current\+Pos\+Results}}
+\index{\$m\+\_\+current\+Pos\+Results@{\$m\+\_\+current\+Pos\+Results}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+current\+Pos\+Results}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+current\+Pos\+Results\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_a34b634ed9ae0e2e303eb5370c8abf5e3}
+
+
+Definition at line 166 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_ad0ba4c46852bb7d82bd04f9b51e97eea}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+database\+Name@{\$m\+\_\+database\+Name}}
+\index{\$m\+\_\+database\+Name@{\$m\+\_\+database\+Name}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+database\+Name}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+database\+Name\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_ad0ba4c46852bb7d82bd04f9b51e97eea}
+
+
+Definition at line 160 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_a18689448220cb9f67ee15999b4be473d}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+hostname@{\$m\+\_\+hostname}}
+\index{\$m\+\_\+hostname@{\$m\+\_\+hostname}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+hostname}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+hostname\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_a18689448220cb9f67ee15999b4be473d}
+
+
+Definition at line 159 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_a5ae64ed0082ea8180014069f702ad4b3}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+password@{\$m\+\_\+password}}
+\index{\$m\+\_\+password@{\$m\+\_\+password}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+password}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+password\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_a5ae64ed0082ea8180014069f702ad4b3}
+
+
+Definition at line 162 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_abe30b980bbd97a1d18b62f0d8dc13a7e}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+result\+Set@{\$m\+\_\+result\+Set}}
+\index{\$m\+\_\+result\+Set@{\$m\+\_\+result\+Set}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+result\+Set}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+result\+Set\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_abe30b980bbd97a1d18b62f0d8dc13a7e}
+
+
+Definition at line 164 of file dbase.\+php.
+
+\hypertarget{class_c_dbase_abfe23707f464ce39565482d658291b25}{\index{C\+Dbase@{C\+Dbase}!\$m\+\_\+user@{\$m\+\_\+user}}
+\index{\$m\+\_\+user@{\$m\+\_\+user}!C\+Dbase@{C\+Dbase}}
+\subsubsection[{\$m\+\_\+user}]{\setlength{\rightskip}{0pt plus 5cm}\$m\+\_\+user\hspace{0.3cm}{\ttfamily [private]}}}\label{class_c_dbase_abfe23707f464ce39565482d658291b25}
+
+
+Definition at line 161 of file dbase.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{dbase_8php}{dbase.\+php}\end{DoxyCompactItemize}

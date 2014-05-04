@@ -1,0 +1,52 @@
+\hypertarget{text_file_to_sections_8php}{\section{text\+File\+To\+Sections.\+php File Reference}
+\label{text_file_to_sections_8php}\index{text\+File\+To\+Sections.\+php@{text\+File\+To\+Sections.\+php}}
+}
+
+
+A class that parses a text file and extracts sections of text. \subsubsection*{} 
+
+
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_text_file_to_sections}{C\+Text\+File\+To\+Sections}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A class that parses a text file and extracts sections of text. \subsubsection*{}
+
+
+
+ 
+
+
+
+This class is fed a text file, results are stored in an array indexed by \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{}'s. This is used for populating rapid populating Wordp\+Pess blogs.
+
+The text File looks like this 
+\begin{DoxyCode}
+...
+[SECTION NAME]:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+Praesent vitae volutpat ante. Nunc elementum ligula metus, 
+eu blandit eros tempor et. 
+Proin vehicula condimentum tincidunt. Vivamus consectetur 
+congue orci, et aliquam eros. 
+Vestibulum ac consectetur tellus. 
+Proin pellentesque urna libero, 
+ut iaculis elit bibendum in. Fusce non iaculis lectus. 
+<code>
+\textcolor{keywordflow}{for} (i=0; i < size; ++i)
+\{
+    x = p << 2;
+\}
+</code>
+...
+\end{DoxyCode}
+
+
+The contents of the array\mbox{[}S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\mbox{]} is in a html Word\+Press acceptable format. Word\+Press eol(end of lines)'s are added if the succeending line is a blank. Also, lines in sections starting with \mbox{[}code\mbox{]} tags and ending with a \mbox{[}/code\mbox{]} are terminated with a Word\+Press eol.  
+
+Definition in file \hyperlink{text_file_to_sections_8php_source}{text\+File\+To\+Sections.\+php}.
+

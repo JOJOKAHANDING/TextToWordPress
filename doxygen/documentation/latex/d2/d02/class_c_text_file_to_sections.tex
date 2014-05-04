@@ -1,0 +1,290 @@
+\hypertarget{class_c_text_file_to_sections}{\section{C\+Text\+File\+To\+Sections Class Reference}
+\label{class_c_text_file_to_sections}\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_text_file_to_sections_a095c5d389db211932136b53f25f39685}{\+\_\+\+\_\+construct} ()
+\item 
+\hyperlink{class_c_text_file_to_sections_a421831a265621325e1fdd19aace0c758}{\+\_\+\+\_\+destruct} ()
+\item 
+\hyperlink{class_c_text_file_to_sections_ae719873c3d10bcf0f0727bfe08d06f1a}{process\+File} (\$path, \&\$section\+Array)
+\begin{DoxyCompactList}\small\item\em Parses a file to populate an array(indexed with \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{}'s) . \end{DoxyCompactList}\item 
+\hyperlink{class_c_text_file_to_sections_ad69dd4607977cae05ebe19d1ae604fb1}{test} ()
+\end{DoxyCompactItemize}
+\subsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+const \hyperlink{class_c_text_file_to_sections_ab42c9508f4a6cafdb958dfc768b4b35f}{E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S} = '$<$B\+R/$>$'
+\item 
+const \hyperlink{class_c_text_file_to_sections_ae0d7cc0854f7f23e9cfd8f31669cb8a6}{E\+O\+L\+\_\+\+U\+N\+I\+X} = \char`\"{}\textbackslash{}n\char`\"{}
+\item 
+const \hyperlink{class_c_text_file_to_sections_a2ed1440aee0a360f2f79b5cbff5a9725}{E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S} = \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}
+\item 
+const \hyperlink{class_c_text_file_to_sections_a4383af7457a1680a60c012aebc4d9dac}{T\+A\+B} = \char`\"{}\textbackslash{}t\char`\"{}
+\item 
+const \hyperlink{class_c_text_file_to_sections_a80547d19853b375decb59c8851e2be8e}{S\+P\+A\+C\+E} = ' '
+\item 
+const \hyperlink{class_c_text_file_to_sections_a3ea64c0a47c070d0ccf0f32e544ce418}{E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G} = ''
+\item 
+const \hyperlink{class_c_text_file_to_sections_ac11b7048c1ff14deb5078834c86485d1}{E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N} = \char`\"{}\+:\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_text_file_to_sections_a5a18ebb2caa80ef7310c72bbae676440}{process\+Line} (\$line, \&\$current\+Section\+Name, \$eol, \&\$section\+Array, \&\$is\+Code)
+\begin{DoxyCompactList}\small\item\em Processes a line of text. . \end{DoxyCompactList}\item 
+\hyperlink{class_c_text_file_to_sections_a587d216d2812e64d4aa44336943aff40}{count\+Of\+Words} (\$possible\+Words)
+\begin{DoxyCompactList}\small\item\em Counts the number non blank words from an array. \end{DoxyCompactList}\item 
+\hyperlink{class_c_text_file_to_sections_a2f2138abd264b23729f1ca95b1cacbb5}{extract\+Words} (\$line)
+\begin{DoxyCompactList}\small\item\em Extract from a line (string) all words. . \end{DoxyCompactList}\item 
+\hyperlink{class_c_text_file_to_sections_a6cbf0ad39824e33fe845a51cc45152b9}{is\+A\+Section\+Name} (\$word, \&\$section\+Name)
+\begin{DoxyCompactList}\small\item\em Checks whether a Word is a 'S\+E\+C\+T\+I\+O\+N N\+A\+M\+E'. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 53 of file text\+File\+To\+Sections.\+php.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_text_file_to_sections_a095c5d389db211932136b53f25f39685}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}}
+\index{\+\_\+\+\_\+construct@{\+\_\+\+\_\+construct}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{\+\_\+\+\_\+construct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+construct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_file_to_sections_a095c5d389db211932136b53f25f39685}
+
+
+Definition at line 64 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a421831a265621325e1fdd19aace0c758}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}}
+\index{\+\_\+\+\_\+destruct@{\+\_\+\+\_\+destruct}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{\+\_\+\+\_\+destruct}]{\setlength{\rightskip}{0pt plus 5cm}\+\_\+\+\_\+destruct (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_file_to_sections_a421831a265621325e1fdd19aace0c758}
+
+
+Definition at line 69 of file text\+File\+To\+Sections.\+php.
+
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_text_file_to_sections_a587d216d2812e64d4aa44336943aff40}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!count\+Of\+Words@{count\+Of\+Words}}
+\index{count\+Of\+Words@{count\+Of\+Words}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{count\+Of\+Words}]{\setlength{\rightskip}{0pt plus 5cm}count\+Of\+Words (
+\begin{DoxyParamCaption}
+\item[{}]{\$possible\+Words}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_text_file_to_sections_a587d216d2812e64d4aa44336943aff40}
+
+
+Counts the number non blank words from an array. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$possible\+Words} & an array of strings or the value F\+A\+L\+S\+E. Note that if it is F\+A\+L\+S\+E the array is empty.  \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+count of non blank words
+\end{DoxyReturn}
+counts non blank words from \$possible\+Words 
+
+Definition at line 205 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a2f2138abd264b23729f1ca95b1cacbb5}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!extract\+Words@{extract\+Words}}
+\index{extract\+Words@{extract\+Words}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{extract\+Words}]{\setlength{\rightskip}{0pt plus 5cm}extract\+Words (
+\begin{DoxyParamCaption}
+\item[{}]{\$line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_text_file_to_sections_a2f2138abd264b23729f1ca95b1cacbb5}
+
+
+Extract from a line (string) all words. . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$line} & a string of text \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+an array of words
+\end{DoxyReturn}
+Extract from \$line all words. A word in a line is encased in white spaces.  
+
+Definition at line 240 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a6cbf0ad39824e33fe845a51cc45152b9}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!is\+A\+Section\+Name@{is\+A\+Section\+Name}}
+\index{is\+A\+Section\+Name@{is\+A\+Section\+Name}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{is\+A\+Section\+Name}]{\setlength{\rightskip}{0pt plus 5cm}is\+A\+Section\+Name (
+\begin{DoxyParamCaption}
+\item[{}]{\$word, }
+\item[{\&}]{\$section\+Name}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_text_file_to_sections_a6cbf0ad39824e33fe845a51cc45152b9}
+
+
+Checks whether a Word is a 'S\+E\+C\+T\+I\+O\+N N\+A\+M\+E'. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$word} & a word \\
+\hline
+\mbox{\tt in,out}  & {\em \$section\+Name} & \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{} if found  \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if this word is a \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{} the variable \$section\+Name is updated if found. Otherwise false is returned and \$section\+Name remains untouched.  return
+\end{DoxyReturn}
+a section name is a word terminated with a \char`\"{};\char`\"{} $<$-\/ E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N  
+
+Definition at line 260 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_ae719873c3d10bcf0f0727bfe08d06f1a}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!process\+File@{process\+File}}
+\index{process\+File@{process\+File}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{process\+File}]{\setlength{\rightskip}{0pt plus 5cm}process\+File (
+\begin{DoxyParamCaption}
+\item[{}]{\$path, }
+\item[{\&}]{\$section\+Array}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_file_to_sections_ae719873c3d10bcf0f0727bfe08d06f1a}
+
+
+Parses a file to populate an array(indexed with \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{}'s) . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$path} & filename \\
+\hline
+\mbox{\tt in,out}  & {\em \$section\+Array} & an array indexed with \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if succesful otherwise false
+\end{DoxyReturn}
+The file \$path is processed based on the \$section\+Array. The result of the parsing operation is store in \$section\+Array 
+
+\begin{DoxyRemark}{Remarks}
+You can derive this method and do your own implementation.  
+\end{DoxyRemark}
+
+
+Definition at line 90 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a5a18ebb2caa80ef7310c72bbae676440}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!process\+Line@{process\+Line}}
+\index{process\+Line@{process\+Line}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{process\+Line}]{\setlength{\rightskip}{0pt plus 5cm}process\+Line (
+\begin{DoxyParamCaption}
+\item[{}]{\$line, }
+\item[{\&}]{\$current\+Section\+Name, }
+\item[{}]{\$eol, }
+\item[{\&}]{\$section\+Array, }
+\item[{\&}]{\$is\+Code}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_c_text_file_to_sections_a5a18ebb2caa80ef7310c72bbae676440}
+
+
+Processes a line of text. . 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em \$line} & line to process \\
+\hline
+\mbox{\tt in,out}  & {\em \$current\+Section\+Name} & current \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\char`\"{}  \mbox{[}in\mbox{]} \$eol end of line, terminator to be added to the array if required.  \\
+\hline
+\mbox{\tt in,out}  & {\em \$section\+Array} & array of strings indexed by \char`\"{}\+S\+E\+C\+T\+I\+O\+N N\+A\+M\+E\+S\char`\"{}'s.  \\
+\hline
+\mbox{\tt in,out}  & {\em \$is\+Code} & running flag containing the current state of processing the \mbox{[}code\mbox{]} tag. 
+\begin{DoxyCode}
+if <code> is found
+    $isCode is turned on.
+if </code>   
+    $isCode is turned off.
+if $isCode
+    each line is terminated with $eol
+\end{DoxyCode}
+  \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nothing
+\end{DoxyReturn}
+processess a Line and stores the info in the an array of sections.  
+
+Definition at line 151 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_ad69dd4607977cae05ebe19d1ae604fb1}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!test@{test}}
+\index{test@{test}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{test}]{\setlength{\rightskip}{0pt plus 5cm}test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_c_text_file_to_sections_ad69dd4607977cae05ebe19d1ae604fb1}
+
+
+Definition at line 273 of file text\+File\+To\+Sections.\+php.
+
+
+
+\subsection{Field Documentation}
+\hypertarget{class_c_text_file_to_sections_a3ea64c0a47c070d0ccf0f32e544ce418}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G@{E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G}}
+\index{E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G@{E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G}]{\setlength{\rightskip}{0pt plus 5cm}const E\+M\+P\+T\+Y\+\_\+\+S\+T\+R\+I\+N\+G = ''}}\label{class_c_text_file_to_sections_a3ea64c0a47c070d0ccf0f32e544ce418}
+
+
+Definition at line 60 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_ae0d7cc0854f7f23e9cfd8f31669cb8a6}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!E\+O\+L\+\_\+\+U\+N\+I\+X@{E\+O\+L\+\_\+\+U\+N\+I\+X}}
+\index{E\+O\+L\+\_\+\+U\+N\+I\+X@{E\+O\+L\+\_\+\+U\+N\+I\+X}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{E\+O\+L\+\_\+\+U\+N\+I\+X}]{\setlength{\rightskip}{0pt plus 5cm}const E\+O\+L\+\_\+\+U\+N\+I\+X = \char`\"{}\textbackslash{}n\char`\"{}}}\label{class_c_text_file_to_sections_ae0d7cc0854f7f23e9cfd8f31669cb8a6}
+
+
+Definition at line 56 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a2ed1440aee0a360f2f79b5cbff5a9725}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S@{E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S}}
+\index{E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S@{E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S}]{\setlength{\rightskip}{0pt plus 5cm}const E\+O\+L\+\_\+\+W\+I\+N\+D\+O\+W\+S = \char`\"{}\textbackslash{}r\textbackslash{}n\char`\"{}}}\label{class_c_text_file_to_sections_a2ed1440aee0a360f2f79b5cbff5a9725}
+
+
+Definition at line 57 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_ab42c9508f4a6cafdb958dfc768b4b35f}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S@{E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S}}
+\index{E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S@{E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S}]{\setlength{\rightskip}{0pt plus 5cm}const E\+O\+L\+\_\+\+W\+O\+R\+D\+P\+R\+E\+S\+S = '$<$B\+R/$>$'}}\label{class_c_text_file_to_sections_ab42c9508f4a6cafdb958dfc768b4b35f}
+
+
+Definition at line 55 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_ac11b7048c1ff14deb5078834c86485d1}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N@{E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N}}
+\index{E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N@{E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N}]{\setlength{\rightskip}{0pt plus 5cm}const E\+O\+W\+\_\+\+S\+E\+C\+T\+I\+O\+N = \char`\"{}\+:\char`\"{}}}\label{class_c_text_file_to_sections_ac11b7048c1ff14deb5078834c86485d1}
+
+
+Definition at line 61 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a80547d19853b375decb59c8851e2be8e}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!S\+P\+A\+C\+E@{S\+P\+A\+C\+E}}
+\index{S\+P\+A\+C\+E@{S\+P\+A\+C\+E}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{S\+P\+A\+C\+E}]{\setlength{\rightskip}{0pt plus 5cm}const S\+P\+A\+C\+E = ' '}}\label{class_c_text_file_to_sections_a80547d19853b375decb59c8851e2be8e}
+
+
+Definition at line 59 of file text\+File\+To\+Sections.\+php.
+
+\hypertarget{class_c_text_file_to_sections_a4383af7457a1680a60c012aebc4d9dac}{\index{C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}!T\+A\+B@{T\+A\+B}}
+\index{T\+A\+B@{T\+A\+B}!C\+Text\+File\+To\+Sections@{C\+Text\+File\+To\+Sections}}
+\subsubsection[{T\+A\+B}]{\setlength{\rightskip}{0pt plus 5cm}const T\+A\+B = \char`\"{}\textbackslash{}t\char`\"{}}}\label{class_c_text_file_to_sections_a4383af7457a1680a60c012aebc4d9dac}
+
+
+Definition at line 58 of file text\+File\+To\+Sections.\+php.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{text_file_to_sections_8php}{text\+File\+To\+Sections.\+php}\end{DoxyCompactItemize}

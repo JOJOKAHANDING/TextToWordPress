@@ -1,0 +1,29 @@
+/* 
+Project: Text to WordPress
+
+Description:
+Php classes used for parsing a text document obtaining snippiets
+of text and posting them in a WordPress blog. 
+
+Author: Jojo Kahanding - jojokahanding@gmail.com
+
+List of files:
+README - This file.
+
+Modules:
+common.php - Common routines.
+dbase.php - Database Class.
+fileToWP.php - file To WordPress Class.
+
+Modules for testing:
+test.php - test routines.
+[testdata] - directory for storing our test data.
+testdata\input.data - text file used by test.php for testing.
+
+Documentaion:
+[doxygen] - doxygen directorydoxygen/DoxyFile - doxygen configuration file.
+[doxygen/documentation/html] - directory of html documentation produced for this module.
+[doxygen/documentation/latex] - directory of latex documentation for this module.
+*/
+
+

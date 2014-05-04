@@ -1,0 +1,173 @@
+Title:
+This is the Title.
+
+Story:
+<style TYPE="text/css">
+ body {
+                 background: black;
+ 	} 
+codetag {
+    background-color: #F9F9F9;
+    border: 1px dashed #2F6FAB;
+    color: blue;
+    line-height: 1.1em;
+}	
+
+
+</style>
+
+<code>
+// Configuration Parameters
+// 
+// The shortcodes also accept a variety of configuration parameters that you may use to customize the output. All are completely optional.
+// •autolinks (true/false) -- Makes all URLs in your posted code clickable. Defaults to true.
+// •collapse (true/false) -- If true, the code box will be collapsed when the page loads, requiring the visitor to click to expand it. Good for large code posts. Defaults to false.
+// •firstline (number) -- Use this to change what number the line numbering starts at. It defaults to 1.
+// •gutter (true/false) -- If false, the line numbering on the left side will be hidden. Defaults to true.
+// •highlight (comma-seperated list of numbers) -- You can list the line numbers you want to be highlighted. For example "4,7,19".
+// •htmlscript (true/false) -- If true, any HTML/XML in your code will be highlighted. This is useful when you are mixing code into HTML, such as PHP inside of HTML. Defaults to false and will only work with certain code languages.
+// •light (true/false) -- If true, the gutter (line numbering) and toolbar (see below) will be hidden. This is helpful when posting only one or two lines of code. Defaults to false.
+// •padlinenumbers (true/false/integer) -- Allows you to control the line number padding. true will result in automatic padding, false will result in no padding, and entering a number will force a specific amount of padding.
+// •title (string) -- Set a label for your code block. Can be useful when combined with the collapse parameter.
+// 
+// 
+// CHEKCON:
+// http://en.support.wordpress.com/code/posting-source-code/
+</code>
+
+Lorem ipsum dolor sit amet, te duis harum ubique his, 
+mel primis oporteat ea. At sit iudicabit dignissim. Ad pri diceret 
+deterruisset, sit debitis assentior eu. 
+Malis referrentur ut duo. Eum amet civibus id, 
+ex pro vivendo adversarium. No sint delenit lucilius nam, nonumes 
+accommodare et pro. Quo ut minim quaerendum, at pri vituperata 
+scriptorem.
+
+
+Nam lorem salutatus at, eum 
+te discere adolescens. Assentior constituam sit eu, qui 
+zril adipisci argumentum ad. Per veri sonet complectitur an, est audiam 
+aperiam adipisci id. Cu nihil quodsi nusquam qui, no percipit 
+dissentiunt pro.
+
+
+You can add bold and underline html etc -
+
+<b>Ex vide corpora mei, at sed brute nullam. Vis ad invidunt 
+apeirian patrioque. Est eu feugait adipiscing, pro nostro docendi 
+deserunt id. Pericula suscipiantur et sea. Eligendi sensibus has ex.
+Ea nec similique delicatissimi, nam legere forensibus voluptaria ad, 
+sed sale natum oporteat ei. Eum conceptam definiebas te. 
+Dicit mediocrem vis ea, soluta epicuri facilisis in mel. 
+Nam id mutat assentior vulputate. Ad cum aeque melius.
+</b>
+
+Sub Text:
+
+This is a subtext
+<code>
+[code language="php"]
+    /**
+     *  @brief processLine
+     *  
+     *  @param [in] $line - line to process
+     *  @param [in,out] $currentSectionName - current Section Name 
+     *  @paran [in] $eol - end of line to be added
+     *  @param [in,out] $sectionArray array of strings indexed by 
+     *      sectionNames
+     *  @param [in,out] $isCode $true or false if [code] is found
+     *      $isCode is turned on. 
+     *      $isCode is turned off if the first word is  [/code]
+     *      if ($isCode) is true an extra $eol is added 
+     *  @return void
+     *  
+     *  @details processess a Line and stores the info in the an 
+     *      array of sections
+     *  
+     */
+    protected function processLine($line, 
+        &$currentSectionName, 
+        $eol, 
+        &$sectionArray, 
+        &$isCode)
+    {
+        $words = $this->extractWords($line);
+        $countOfWords = $this->countOfWords($words);
+        $firstWord = $countOfWords == 0 ? "" : $words[0];
+        $nextSectionName = "";
+        
+        if ($this->isASectionName($firstWord, 
+                                    $nextSectionName))
+        {
+            $currentSectionName = $nextSectionName; 
+            DEBUGMESSAGE("Current section Name".$currentSectionName);
+            return;
+        }
+        
+        if (strcasecmp($firstWord, "<code>") == 0)
+        {
+            $isCode = true;
+        }
+        else if (strcasecmp($firstWord, "</code>") == 0)
+        {
+            $isCode = false;
+        }
+        
+        if (array_key_exists($currentSectionName, $sectionArray))
+        {   // add the line
+            $sectionArray[$currentSectionName] .= $line;
+            // add an eol if this is a code or a blank line
+            if ($isCode || ($countOfWords == 0) )
+            {
+                $sectionArray[$currentSectionName] .= $eol;
+            }
+            else
+            {
+                // space 
+                $sectionArray[$currentSectionName] .= 
+                    CTextFileToSections::SPACE;
+            }
+        }
+        return;
+    }
+[/code]
+</code>
+
+
+Continuation
+
+Amet meis cu vel, quaeque perfecto dignissim usu at, unum scripta ex cum. 
+Te nam stet unum, sale labitur offendit ea ius. Prompta patrioque urbanitas 
+id has, vis ex torquatos vituperatoribus. Qui sale similique cu.
+
+
+Zril feugiat sea ut, sit te invidunt deseruisse. Et veritus rationibus sit. 
+Et etiam omnes salutandi has, lorem noster atomorum cum ne. Eirmod patrioque 
+ut sea, ut amet omnis scaevola vim.
+
+
+Disputationi vituperatoribus ei sit. Sed quodsi prodesset no, vix te reque 
+philosophia, usu dolorum rationibus ne. Ut duo libris saperet, pri qualisque 
+imperdiet instructior te. Voluptaria 
+temporibus pro no. Salutandi 
+imperdiet scriptorem his ea, duo soleat epicuri in.
+
+
+Has erat debitis comprehensam an, natum 
+ancillae senserit te sit. Nec possit albucius cu, 
+nec unum prodesset ut. Eu exerci albucius est, eius aliquando ut vix, 
+quis aperiam vim te. Eos ut sint dicunt detracto, pri ea munere verterem. 
+Est noster expetenda ea, ex vocibus blandit adolescens nec.
+
+
+Suas vitae dissentiet per eu. Ad ornatus vocibus mandamus eum. 
+Meliore epicurei inciderint ea nec, impetus saperet no est. 
+Mei affert nominati ei, te stet nibh autem nec, qui no elit minimum.
+
+
+Quod albucius hendrerit ad sea, ei eos iudicabit sadipscing. 
+Fabellas rationibus neglegentur ius et, id qui erat novum utamur, 
+diam scribentur mediocritatem vel at. Nam id habemus menandri inciderint, 
+quo dolorem graecis temporibus te. Te ius case dicam facilisi, 
+vide dolor putent mei ex, paulo libris 
+tamquam est id. In usu docendi sadipscing.
